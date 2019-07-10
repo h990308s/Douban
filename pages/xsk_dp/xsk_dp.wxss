@@ -1,0 +1,113 @@
+/* pages/xsk_dp/xsk_dp.wxss */
+/* 豆瓣评分 */
+.dbpf{
+  padding: 20rpx;
+}
+.dbpf_t{
+  font-size: 40rpx;
+}
+.dbpf_t text{
+  font-weight: 600;
+}
+.dbpf_b{
+  display: flex;
+  padding: 30rpx 50rpx 0;
+}
+.dbpf_b_l{
+  font-weight: 700;
+  text-align: center;
+}
+.dbpf_b_l text{
+  font-size: 80rpx;
+}
+.van-rate__item{
+  padding: 0 1px !important;
+}
+.dbpf_b_r{
+  margin: 10px 0 0 13px;
+  width: 400rpx;
+  height: 200rpx;
+}
+
+/* 短评 */
+.dp{
+  margin-top: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 30rpx 20rpx;
+  border-top: 1px solid #f3f3f3;
+}
+.dp_t{
+  display: flex;
+  justify-content: space-between;
+}
+.dp_t1{
+  font-weight: 700;
+  font-size: 40rpx;
+}
+.dp_t1 text{
+  color: #818181;
+  font-size: 30rpx;
+}
+.dp_t2{
+  font-size: 30rpx;
+  color: #818181;
+}
+.dp_b{
+  margin-top: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 30rpx;
+}
+.dp_bt{
+  display: flex;
+}
+.dp_bt image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.dp_btr{
+  padding-left: 10rpx;
+}
+.dp_btrz{
+  font-weight: 700;
+}
+.dp_btr .van-rate{
+  display: inline-block;
+}
+.dp_btr text{
+  font-size: 26rpx;
+  color: #c0c0c0;
+  margin-left: 10rpx;
+}
+.dp_bc{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.dp_bb{
+  color: #828282;
+  margin-top: 20rpx;
+}
+.dp_bb image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+.dp_bb text{
+  font-size: 28rpx;
+  vertical-align: middle; 
+}
+.dp_b1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.dp_b1 text{
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.dp_b1 van-icon{
+  font-size: 24rpx;
+  color: #838383;
+}

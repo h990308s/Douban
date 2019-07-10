@@ -1,0 +1,45 @@
+<!--pages/xsk_dp/xsk_dp.wxml-->
+<!-- 地址：{{news}} -->
+<view class="dbpf">
+  <view class="dbpf_t">
+    <text>豆瓣评分™</text>
+  </view>
+  <view class="dbpf_b">
+    <view class="dbpf_b_l">
+      <text>{{subjects_dp.subject.rating.average}}</text>
+      <van-rate readonly value="{{ subjects_dp.subject.rating.stars/10 }}" color="#ffac2c" size="10" allow-half bind:change="onChange" />
+    </view>
+    <image class="dbpf_b_r" src="../../images/xingxing2.jpg"></image>
+    <!-- <view class="dbpf_b_r">猜猜这是撒</view> -->
+  </view>
+</view>
+
+<view class="dp">
+  <view class="dp_t">
+    <view class="dp_t1">短评<text>{{subjects_dp.total}}条</text></view>
+    <view class="dp_t2">看过
+      <van-icon name="arrow-down" />
+    </view>
+  </view>
+  <view class="dp_b" wx:for="{{subjects_dp.comments}}">
+    <view class="dp_bt">
+      <image src="{{item.author.avatar}}"></image>
+      <view class="dp_btr">
+        <view class="dp_btrz">{{item.author.name}}</view>
+        <van-rate readonly value="{{ item.rating.value }}" size="10" allow-half bind:change="onChange" />
+        <text>{{item.created_at}}</text>
+      </view>
+    </view>
+    <view class="dp_bc">
+      {{item.content}}
+    </view>
+    <view class="dp_bb">
+      <image src="../../images/zan.png"></image>
+      <text>{{item.useful_count}}</text>
+    </view>
+  </view>
+  <view class="dp_b1">
+    <text>查看全部短评</text>
+    <van-icon name="arrow" />
+  </view>
+</view>

@@ -1,0 +1,368 @@
+/* pages/xsk/xsk.wxss */
+.body{
+  background: #f9f5f4;
+  padding: 0 30rpx;
+}
+.tou{
+  display: flex;
+  padding-top: 40rpx;
+}
+.tou image{
+  width: 210rpx;
+  height: 280rpx;
+}
+.tou_r{
+  margin-left: 30rpx;
+}
+.tou_r1{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.tou_r2{
+  font-size: 30rpx;
+  color: #838383;
+}
+.tou_r3{
+  font-size: 22rpx;
+  color: #838383;
+  margin-top: 20rpx;
+}
+.tou_r4{
+  display: flex;
+  margin-top: 30rpx;
+}
+.tou_r4_1,.tou_r4_2{
+  width: 48%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  text-align: center;
+  background: #fff;
+  border-radius: 5rpx;
+  box-shadow: 1rpx 2rpx 5rpx #838383;
+}
+.tou_r4_2{
+  margin-left: 4%;
+}
+
+/* 豆瓣评分 */
+.dbpf{
+  margin-top: 40rpx;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.dbpf_t{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.dbpf_t text{
+  font-weight: 600;
+}
+.dbpf_b{
+  display: flex;
+  padding: 0 120rpx;
+}
+.dbpf_b_l{
+  font-weight: 700;
+  font-size: 48rpx;
+  text-align: center;
+}
+.van-rate__item{
+  padding: 0 1px !important;
+}
+.dbpf_b_r{
+  margin-top: 10rpx;
+  width: 270rpx;
+  height: 100rpx;
+}
+
+/* 简介 */
+.jianjie{
+  margin-top: 80rpx;
+}
+.jianjie_1{
+  font-weight: 700;
+  font-size: 34rpx;
+}
+.jianjie_2{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.jianjie_3{
+  float: right;
+  font-size: 30rpx;
+  color: #818181;
+}
+.jianjie_4{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.yingren{
+  margin-top: 80rpx;
+}
+.yingren_1{
+  font-weight: 700;
+  font-size: 34rpx;
+}
+.uploadWrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 340rpx;
+}
+.upload_Item {
+  width: 200rpx;
+  height: 340rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.upload_Item_img {
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item text {
+  display: inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 160rpx;
+  font-size: 26rpx; 
+  text-align: left;
+}
+.yy{
+  color: #818181;
+  font-size: 26rpx;
+}
+
+/* 预告片、剧照 */
+.ygp{
+  margin-top: 80rpx;
+}
+.ygp_t{
+  display: flex;
+  justify-content: space-between;
+}
+.ygp_t text:nth-child(1){
+  font-weight: 700;
+  font-size: 34rpx;
+}
+.ygp_t text:nth-child(2){
+  font-size: 30rpx;
+  color: #818181;
+}
+.upload_Item_video{
+  width: 500rpx;
+  height: 300rpx; 
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item_img1 {
+  width: 220rpx;
+  height: 300rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item1 {
+  height: 340rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+/* .ygp_b{
+  display: flex;
+  flex-direction: row;
+  height: 330rpx;
+}
+.ygp_b video{
+  width: 500rpx;
+  height: 300rpx;
+}
+.ygp_b image{
+  width: 100%;
+  height: 300rpx;
+} */
+
+/* 短评 */
+.dp{
+  margin-top: 80rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 30rpx 20rpx;
+}
+.dp_t{
+  display: flex;
+  justify-content: space-between;
+}
+.dp_t1{
+  font-weight: 700;
+  font-size: 34rpx;
+}
+.dp_t2{
+  font-size: 30rpx;
+  color: #818181;
+}
+.dp_t2 van-icon{
+  font-size: 24rpx;
+}
+.dp_b{
+  margin-top: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 30rpx;
+}
+.dp_bt{
+  display: flex;
+}
+.dp_bt image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.dp_btr{
+  padding-left: 10rpx;
+}
+.dp_btrz{
+  font-weight: 700;
+}
+.dp_btr .van-rate{
+  display: inline-block;
+}
+.dp_btr text{
+  font-size: 26rpx;
+  color: #c0c0c0;
+  margin-left: 10rpx;
+}
+.dp_bc{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+.dp_bb{
+  color: #828282;
+  margin-top: 20rpx;
+}
+.dp_bb image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+.dp_bb text{
+  font-size: 28rpx;
+  vertical-align: middle; 
+}
+.dp_b1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.dp_b1 text{
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.dp_b1 van-icon{
+  font-size: 24rpx;
+  color: #838383;
+}
+
+/* 喜欢这部电影的人也喜欢 */
+.xhzb{
+  margin-top: 80rpx;
+}
+.xhzb_t{
+  font-weight: 700;
+}
+#pf{
+  display: inline-block;
+  color: #818181;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.xhzb .van-rate{
+  display: inline-block;
+}
+
+/* 影评 */
+.yp{
+  margin-top: 80rpx;
+}
+.yp_t{
+  font-weight: 700
+}
+.yp_t text{
+  font-size: 30rpx;
+  color: #818181;
+}
+.yp_b{
+  margin-top: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 30rpx;
+  background: #fff;
+  width: 100%;
+  margin-left: -30rpx;
+  padding: 40rpx 30rpx;
+}
+.yp_bt{
+  display: flex;
+}
+.yp_bt image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.yp_btr{
+  padding-left: 10rpx;
+  display: flex;
+}
+.yp_btrz{
+  font-size: 28rpx;
+  color: #818181;
+  padding-top: 10rpx;
+}
+.yp_btr .van-rate{
+  margin-left: 10rpx;
+  display: inline-block;
+}
+.yp_bt1{
+  font-weight: 700;
+  margin-top: 20rpx;
+}
+.yp_bc{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+
+}
+.yp_bb{
+  color: #828282;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+.yp_b1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.yp_b1 text{
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.yp_b1 van-icon{
+  font-size: 24rpx;
+  color: #838383;
+}

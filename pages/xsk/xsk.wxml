@@ -1,0 +1,204 @@
+<!--pages/xsk/xsk.wxml-->
+<!-- 地址：{{news}} -->
+<view class="body">
+  <view class="tou">
+    <image src="{{subjects_xsk.images.large}}"></image>
+    <view class="tou_r">
+      <view class="tou_r1">{{subjects_xsk.title}}({{subjects_xsk.year}})</view>
+      <view class="tou_r2">{{subjects_xsk.original_title}}({{subjects_xsk.year}})</view>
+      <view class="tou_r3">{{subjects_xsk.genres[0]}} {{subjects_xsk.genres[1]}} / {{subjects_xsk.countries}} / 片长{{subjects_xsk.durations[0]}}</view>
+      <view class="tou_r4">
+        <view class="tou_r4_1" bindtap="bindXk">
+          <van-icon name="like-o" color="#ffac2c" />想看</view>
+        <view class="tou_r4_2" bindtap="bindKg">
+          <van-icon name="star-o" color="#ffac2c" />看过</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="dbpf" bindtap="bindXsk_dp" data-newsid="{{subjects_dp.comments[0].subject_id}}">
+    <view class="dbpf_t">
+      <text>豆瓣评分™</text>
+      <van-icon name="arrow" />
+    </view>
+    <view class="dbpf_b">
+      <view class="dbpf_b_l">
+        {{subjects_xsk.rating.average}}
+        <van-rate readonly value="{{ subjects_xsk.rating.stars/10 }}" color="#ffac2c" size="10" allow-half bind:change="onChange" />
+      </view>
+      <image class="dbpf_b_r" src="../../images/xingxing.jpg"></image>
+      <!-- <view class="dbpf_b_r">猜猜这是撒</view> -->
+    </view>
+  </view>
+
+  <view class="jianjie" bindtap="flodFn">
+    <view class="jianjie_1">简介</view>
+    <view wx:if="{{isFold}}">
+      <view class="jianjie_2">{{subjects_xsk.summary}}</view>
+      <view class="jianjie_3">收起</view>
+    </view>
+    <view wx:else>
+      <view class="jianjie_4">{{subjects_xsk.summary}}</view>
+      <view class="jianjie_3">展开</view>
+    </view>
+  </view>
+
+  <view class="yingren">
+    <view class="yingren_1">影人</view>
+    <scroll-view scroll-x="true" style="margin: 30rpx -20rpx 0; width:108%">
+      <view class="uploadWrap" scroll-x="true">
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.writers[0].avatars.large}}"></image>
+          <text>{{subjects_xsk.writers[0].name}}</text>
+          <view class="yy">导演</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[0].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[0].name}}</text>
+          <view class="yy">演员</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[1].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[1].name}}</text>
+          <view class="yy">演员</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[2].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[2].name}}</text>
+          <view class="yy">演员</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[3].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[3].name}}</text>
+          <view class="yy">演员</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="ygp">
+    <view class="ygp_t">
+      <text>预告片/剧照</text>
+      <text>全部537></text>
+    </view>
+    <scroll-view scroll-x="true" style="margin: 30rpx -20rpx 0; width:108%">
+      <view class="uploadWrap" scroll-x="true">
+        <view class="upload_Item1">
+          <video class="upload_Item_video" src="{{subjects_xsk.trailer_urls}}"></video>
+        </view>
+        <view class="upload_Item1">
+          <image class="upload_Item_img1" src="{{subjects_xsk.photos[1].image}}"></image>
+        </view>
+        <view class="upload_Item1">
+          <image class="upload_Item_img1" src="{{subjects_xsk.photos[5].image}}"></image>
+        </view>
+        <view class="upload_Item1">
+          <image class="upload_Item_img1" src="{{subjects_xsk.photos[8].image}}"></image>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- <scroll-view scroll-x="true" style="margin-top: 30rpx;">
+      <view class="ygp_b" scroll-x="true">
+        <video src="{{subjects_xsk.trailer_urls}}"></video>
+        <image src="{{subjects_xsk.photos[1].image}}"></image>
+        <image src="{{subjects_xsk.photos[5].image}}"></image>
+        <image src="{{subjects_xsk.photos[8].image}}"></image>
+      </view>
+    </scroll-view> -->
+  </view>
+
+  <view class="dp" bindtap="bindXsk_dp" data-newsid="{{subjects_dp.comments[0].subject_id}}">
+    <view class="dp_t">
+      <view class="dp_t1">短评</view>
+      <view class="dp_t2">全部 280818
+        <van-icon name="arrow" />
+      </view>
+    </view>
+    <view class="dp_b" wx:for="{{subjects_dp.comments}}" wx:if="{{index<4}}">
+      <view class="dp_bt">
+        <image src="{{item.author.avatar}}"></image>
+        <view class="dp_btr">
+          <view class="dp_btrz">{{item.author.name}}</view>
+          <van-rate readonly value="{{ item.rating.value }}" size="10" allow-half bind:change="onChange" />
+          <text>{{item.created_at}}</text>
+        </view>
+      </view>
+      <view class="dp_bc">
+        {{item.content}}
+      </view>
+      <view class="dp_bb">
+        <image src="../../images/zan.png"></image>
+        <text>{{item.useful_count}}</text>
+      </view>
+    </view>
+    <view class="dp_b1">
+      <text>查看全部短评</text>
+      <van-icon name="arrow" />
+    </view>
+  </view>
+
+  <view class="xhzb">
+    <view class="xhzb_t">喜欢这部电影的人也喜欢</view>
+    <scroll-view scroll-x="true" style="margin: 30rpx -20rpx 0; width:108%">
+      <view class="uploadWrap" scroll-x="true">
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.writers[0].avatars.large}}"></image>
+          <text>{{subjects_xsk.writers[0].name}}</text>
+          <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+          <view id="pf">{{item.rating.average}}</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[0].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[0].name}}</text>
+          <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+          <view id="pf">{{item.rating.average}}</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[1].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[1].name}}</text>
+          <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+          <view id="pf">{{item.rating.average}}</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[2].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[2].name}}</text>
+          <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+          <view id="pf">{{item.rating.average}}</view>
+        </view>
+        <view class="upload_Item">
+          <image class="upload_Item_img" src="{{subjects_xsk.casts[3].avatars.large}}"></image>
+          <text>{{subjects_xsk.casts[3].name}}</text>
+          <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+          <view id="pf">{{item.rating.average}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="yp">
+    <view class="yp_t">
+      影评
+      <text>7887条</text>
+    </view>
+    <view class="yp_b" wx:for="{{subjects_cp.reviews}}">
+      <view class="yp_bt">
+        <image src="{{item.author.avatar}}"></image>
+        <view class="yp_btr">
+          <view class="yp_btrz">{{item.author.name}}看过</view>
+          <van-rate readonly value="{{ item.rating.value }}" size="12" allow-half bind:change="onChange" />
+        </view>
+      </view>
+      <view class="yp_bt1">
+        {{item.title}}
+      </view>
+      <view class="yp_bc">
+        {{item.content}}
+      </view>
+      <view class="yp_bb">
+        <text>{{item.comments_count}}回复 · </text>
+        <text>{{item.useful_count}}有用 · </text>
+        <text>{{item.useless_count}}转发</text>
+      </view>
+    </view>
+  </view>
+</view>

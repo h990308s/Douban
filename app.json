@@ -1,0 +1,55 @@
+{
+  "pages": [
+    
+    
+    "pages/douban/douban",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo",
+    "pages/yyry/yyry",
+    "pages/bd/bd",
+    "pages/wode/wode",
+    "pages/top250/top250",
+    "pages/xsk/xsk",
+    "pages/xk/xk",
+    "pages/kg/kg",
+    "pages/xsk_dp/xsk_dp",
+    "pages/dybd/dybd",
+    "pages/pfzg/pfzg",
+    "pages/gyfx/gyfx"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#67ba62",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "./images/shouye.png",
+        "selectedIconPath": "./images/shouye1.png",
+        "pagePath": "pages/douban/douban",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./images/shipin.png",
+        "selectedIconPath": "./images/shipin1.png",
+        "pagePath": "pages/bd/bd",
+        "text": "榜单"
+      },
+      {
+        "iconPath": "./images/wode.png",
+        "selectedIconPath": "./images/wode1.png",
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-rate": "./utils/vant-weapp/dist/rate/index",
+    "van-icon": "./utils/vant-weapp/dist/icon/index"
+  }
+}

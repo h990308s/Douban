@@ -1,0 +1,21 @@
+/* pages/kg/kg.wxss */
+view{
+  text-align: center;
+  font-size: 24rpx;
+  color: #e1e1e1;
+  margin: 5rpx 0;
+}
+textarea{
+  width: 84%;
+  margin: 20rpx auto 40rpx;
+  font-size: 28rpx;
+  padding: 20rpx;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+button{
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  background: #42bd56;
+}

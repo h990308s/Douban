@@ -1,0 +1,90 @@
+<!--pages/gyfx/gyfx.wxml-->
+<view class="body">
+  <view class="gyfx_1">
+    <image src="../../images/touxiang.jpg"></image>
+    <view class="gyfx_1_1">
+      <text>拾忆灬军</text>
+      <text>在豆瓣一共标记看过</text>
+    </view>
+    <view class="gyfx_1_2">
+      <text>0</text>
+      <text>部影视</text>
+    </view>
+  </view>
+
+  <image id="tu1" src="../../images/gyfx.jpg"></image>
+
+  <view class="gyfx_2">
+    <image src="../../images/gyfx1.jpg"></image>
+    <text>我看过的可不止这些，去补标</text>
+  </view>
+
+  <view class="gyfx_3">
+    <view class="gyfx_3_1">
+      <text>平均每周</text>
+      <text>- -部电影</text>
+    </view>
+    <view class="gyfx_3_2">
+      <text>这些年，为看电影电视剧花了</text>
+      <text>- -小时</text>
+      <text>大约消费了</text>
+      <text>- -元</text>
+    </view>
+  </view>
+
+  <view class="gyfx_4">
+    <text>最常看的类型</text>
+    <image src="../../images/gyfx.png"></image>
+  </view>
+
+  <view class="gyfx_5">
+    <text>影片年份分析</text>
+    <image src="../../images/gyfx2.png"></image>
+  </view>
+
+  <view class="gyfx_6">
+    <text>最常看的导演和演员</text>
+    <view class="gyfx_6_1">
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+    </view>
+    <view class="gyfx_6_1">
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+      <view class="ww">
+        <view class="ee">- -</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="gyfx_7">
+    <text>影片地区分布</text>
+    <view class="gyfx_7_1">
+      <view class="qq">- -</view>
+      <view class="qq">- -</view>
+      <view class="qq">- -</view>
+    </view>
+    <view class="gyfx_7_1">
+      <view class="qq">- -</view>
+      <view class="qq">- -</view>
+      <view class="qq">- -</view>
+    </view>
+  </view>
+
+  <view class="gyfx_2">
+    <image src="../../images/gyfx1.jpg"></image>
+    <text>我看过的可不止这些，去补标</text>
+  </view>
+
+</view>

@@ -1,0 +1,95 @@
+/* pages/dybd/dybd.wxss */
+/* 登录解锁 */
+.top{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.top_t{
+  position: absolute;
+  top: 0;
+  color: #818181;
+  font-size: 28rpx;
+  margin: 20rpx;
+  z-index: 50;
+}
+.top video{
+  left: -100%;
+  width: 260%;
+  height: 1100rpx;
+  z-index: 10;
+}
+#yi{
+  width: 100%;
+  height: 1100rpx;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+#er{
+  width: 85%;
+  height: 530rpx;
+  position: absolute;
+  top: 0;
+  margin: 180rpx 60rpx 60rpx;
+  z-index: 30;
+}
+.top_b{
+  width: 92%;
+  height: 310rpx;
+  margin: 0 30rpx;
+  padding: 40rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 39rpx;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 99;
+  /* background: #313131;
+  opacity: 0.5; */
+}
+.top_b text{
+  text-align: center;
+  font-weight: 700;
+  display: block;
+}
+.top_b button{
+  width: 45%;
+  margin-top: 40rpx;
+  background: #f7b859;
+}
+
+/* 中间  */
+.center{
+  padding: 40rpx;
+}
+.center_bd{
+  text-align: center;
+  font-weight: 700;
+}
+.center_tu{
+  margin-top: 40rpx;
+}
+.center_t1,.center_t2{
+  width: 48%;
+  display: inline-block;
+}
+.center_t1 image,.center_t2 image{
+  width: 100%;
+  height: 200rpx;
+}
+.center_t1 text,.center_t2 text{
+  display: block;
+  font-size: 24rpx;
+  color: #818181;
+}
+.center_t2{
+  margin-left: 4%;
+}
+
+.bottom{
+  text-align: center;
+  font-size: 24rpx;
+  color: #ebebeb;
+  margin-bottom: 40rpx;
+}

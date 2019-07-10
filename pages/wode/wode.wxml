@@ -1,0 +1,58 @@
+<!--pages/wode/wode.wxml-->
+<view class="dlv">
+  <image src="../../images/wodebj.png"></image>
+  <button bindtap="bindCk">登录</button>
+</view>
+<view class="xia">
+  <view class="top">
+    <text>我的书影音</text>
+    <text bindtap="bindCk">登录查看 ></text>
+  </view>
+  <view class="xh" bindtap="bindGygx">
+    <image src="../../images/guanying.png"></image>
+    <view class="xh_r">
+      <text class="gy">观影分析</text>
+      <view class="xh_rb">
+        <view class="kg">0 看过</view>
+        <view class="bji">
+          标记10部影片
+          <br/> 开启观影分析
+        </view>
+        <button>立即开启</button>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+
+  <view class="xh" bindtap="bindGygx">
+    <image src="../../images/dushu.png"></image>
+    <view class="xh_r">
+      <text class="gy">读书分析</text>
+      <view class="xh_rb">
+        <view class="kg">0 读过</view>
+        <view class="bji">
+          标记10本书
+          <br/> 开启读书分析
+        </view>
+        <button>立即开启</button>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+
+  <view class="xh" bindtap="bindGygx">
+    <image src="../../images/yinyue.png"></image>
+    <view class="xh_r">
+      <text class="gy">音乐分析</text>
+      <view class="xh_rb">
+        <view class="kg">0 听过</view>
+        <view class="bji">
+          标记10张唱片
+          <br/>开启音乐分析
+        </view>
+        <button>立即开启</button>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+</view>

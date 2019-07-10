@@ -1,0 +1,58 @@
+<!--pages/douban/douban.wxml-->
+<view class="search">
+  <input type="text" placeholder="搜索"></input>
+</view>
+<!-- ---影院热映--- -->
+<view class="Cinema">
+  <text>影院热映</text>
+  <text bindtap="bindGd">查看更多 ></text>
+</view>
+<scroll-view scroll-x="true" style="margin-bottom:40rpx;">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subjects}}" wx:key="" bindtap="bindXsk" data-newsid="{{item.id}}">
+      <!-- navigator：页面跳转链接 -->
+      <navigator  hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+        <view id="pf">{{item.rating.average}}</view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+<!-- 豆瓣热门 -->
+<view class="Cinema">
+  <text>豆瓣热门</text>
+  <text bindtap="bindGd">查看更多 ></text>
+</view>
+<scroll-view scroll-x="true" style="margin-bottom:40rpx;">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:key="" bindtap="bindXsk" data-newsid="{{item.id}}">
+      <!-- navigator：页面跳转链接 -->
+      <navigator hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+        <view id="pf">{{item.rating.average}}</view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+<!-- 即将上映 -->
+<view class="Cinema">
+  <text>即将上映</text>
+  <text bindtap="bindGd">查看更多 ></text>
+</view>
+<scroll-view scroll-x="true" style="margin-bottom:40rpx;">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subjects_soon}}" wx:key="" bindtap="bindXsk" data-newsid="{{item.id}}">
+      <!-- navigator：页面跳转链接 -->
+      <navigator hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+        <view id="pf">{{item.rating.average}}</view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>

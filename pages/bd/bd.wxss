@@ -1,0 +1,40 @@
+/* pages/bd/bd.wxss */
+.main{
+  padding: 0 35rpx;
+}
+.one{
+  margin-top: 20rpx;
+}
+.one image{
+  width: 100%;
+  height: 320rpx;
+  border-radius: 10rpx;
+}
+
+.diyi{
+ display: flex;
+ margin-top: 20rpx;
+}
+.d_l{
+}
+.d_l image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.d_r{
+  flex-grow: 1;
+  padding: 20rpx 0;
+}
+.d_rm{
+  padding: 20rpx 20rpx;
+  border: 1px solid #e6e6e6;
+}
+.upload_Item{
+  padding: 3rpx 0;
+}
+.upload_Item navigator{
+  font-size: 20rpx;
+}
+.upload_Item navigator text{
+  color: rgb(255, 223, 44)
+}

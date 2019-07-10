@@ -1,0 +1,117 @@
+<!--pages/bd/bd.wxml-->
+<view class="main">
+  <view class="one" bindtap="bindDybd">
+    <image src="../../images/1.jpg"></image>
+  </view>
+  <view class="one">
+    <image src="../../images/2.jpg"></image>
+  </view>
+  <view class="one">
+    <image src="../../images/3.jpg"></image>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/top250.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/wydy.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/hydy.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/lmjp.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/khp.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/xjp.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="diyi" bindtap="bindTop">
+    <view class="d_l">
+      <image src="../../images/dzp.png"></image>
+    </view>
+    <view class="d_r">
+      <view class="d_rm">
+        <view class="upload_Item" wx:for="{{subjects_Top250}}" wx:if="{{index<3}}">
+          <navigator url='../top250/top250' hover-class="none">
+            {{index+1}}.{{item.title}}
+            <text>{{item.rating.average}}分</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

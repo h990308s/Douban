@@ -1,0 +1,14 @@
+<!--pages/kg/kg.wxml-->
+<view>点击星星评分</view>
+<van-rate
+  value="{{ value }}"
+  size="{{ 28 }}"
+  allow-half
+  color="#f44"
+  void-color="#eee"
+  void-icon="star"
+  bind:change="onChange"
+/>
+<textarea placeholder="写几句评价吧..." ></textarea>
+<button>确定</button>
+

@@ -1,0 +1,134 @@
+<!--pages/dybd/dybd.wxml-->
+<view class="top">
+  <view class="top_t">已有734515人生成成就海报</view>
+  <video src="http://sv1.doubanio.com/201907021017/2650414c2f4b6e4f9f44d960d9dc69b3/2017/mp4ieannual2018.mp4" autoplay="true" loop="true" show-center-play-btn="false" controls="false"   ></video>
+  <image src="../../images/dybd1.jpg" id="yi"></image>
+  <image src="../../images/dybd.jpg" id="er"></image>
+  <view class="top_b">
+    <text>2018年度电影榜单</text>
+    <text>你看过多少？</text>
+    <button>登录解锁</button>
+  </view>
+</view>
+
+<view class="center" bindtap="bindPfzg">
+  <view class="center_bd">2018分类榜单</view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_01.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_02.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_03.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_04.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_05.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_06.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_07.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_08.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_09.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_10.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_11.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_12.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_13.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_14.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_15.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_16.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_17.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_18.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_19.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_20.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_21.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_22.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_23.png"></image>
+      <text>看过0部/共10部</text>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">豆瓣2018年度电影榜单</view>

@@ -1,0 +1,104 @@
+/* pages/douban/douban.wxss */
+/* @import "../../utils/common.wxss"; */
+/* 搜索框 */
+ .search{
+  background: #67ba62;
+  padding: 20rpx;
+}
+.search input{
+  background: #fff;
+  text-align: center;
+  font-size: 27rpx;
+  color: #666;
+  border-radius: 5rpx;
+}
+
+/* 影院热映 */
+/*
+.Cinema{
+  padding: 20rpx;
+  font-family: 黑体;
+  float: left;
+}
+.Cinema text:nth-child(1){
+  font-size: 36rpx;
+  float: left;
+}
+.Cinema text:nth-child(2){
+  float: right;
+  color: #67ba62;
+  font-size: 33rpx;
+} */
+
+/* 影院热映 */
+.Cinema{
+  float: left;
+  width: 100%;
+  height: 60rpx;
+  /* background: #f90; */
+  margin: 20rpx auto 0;
+  font-family: "黑体";
+}
+.Cinema text:nth-child(1){
+  margin-left: 3%;
+  font-size: 36rpx;
+}
+.Cinema text:nth-child(2){
+  float: right;
+  color: #67ba62;
+  margin-right: 3%;
+  font-size: 33rpx;
+}
+/* .Cinema navigator{
+  display: inline;
+}
+.Cinema navigator text{
+  float: right;
+  color: #67ba62;
+  margin-right: 3%;
+  font-size: 33rpx;
+} */
+
+/* 图片滑动 */
+.uploadWrap {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 330rpx;
+}
+.upload_Item {
+  float: left;
+  width: 200rpx;
+  height: 330rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.upload_Item_img {
+  float: left;
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item text {
+  display: inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 160rpx;
+  font-size: 26rpx; 
+  text-align: left;
+}
+.van-rate__item{
+  padding: 0 1px !important;
+}
+#pf{
+  display: inline-block;
+  color: #818181;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.van-rate{
+  display: inline-block;
+}

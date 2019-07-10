@@ -1,0 +1,33 @@
+<!--pages/top250/top250.wxml-->
+<view class="top">
+  <image src="../../images/datutop250.jpg"></image>
+</view>
+
+<view class="jindu">
+  <view class="kang">
+    <text>看过0部/</text>
+    <text>共250部</text>
+  </view>
+  <button>登录查看成就</button>
+</view>
+
+<view class="xunh" wx:for="{{subjects_Top250}}" bindtap="bindXsk" data-newsid="{{item.id}}" >
+  <view class="shang">NO.{{index+1}}</view>
+  <view class="zhong">
+    <image src="{{item.images.large}}"></image>
+    <view class="zhong_c">
+      <view class="zhong_c1">{{item.title}}</view>
+      <view class="zhong_c2">
+        <van-rate readonly value="{{ item.rating.stars/10 }}" size="{{ 10 }}" allow-half bind:change="onChange" />
+        {{item.rating.average}}
+      </view>
+      <view class="zhong_c3">国家 / {{item.genres[0]}} {{item.genres[1]}} / {{item.directors[0].name}} / {{item.casts[0].name}}  {{item.casts[1].name}}</view>
+    </view>
+    <view class="zhong_r">
+      <van-icon size="26rpx" color="#ffab2c" name="star-o" />
+      <view class="kanguo">看过</view>
+    </view>
+  </view>
+  <view class="xia">希望让人自由。</view>
+  <view class="tiaozi"></view>
+</view>

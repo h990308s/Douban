@@ -1,0 +1,76 @@
+/* pages/wode/wode.wxss */
+.dlv{
+  /* height: 400rpx; */
+  position: relative;
+}
+.dlv image{
+  width: 100%;
+  height: 400rpx;
+}
+.dlv button{
+  width: 350rpx;
+  border-radius: 80rpx;
+  background: #fff;
+  position: absolute;
+  top: 40%;
+  left: 28%;
+}
+.xia{
+  padding: 0 40rpx;
+}
+.top{
+  margin: 40rpx 0;
+  display: flex;
+  justify-content:space-between;
+}
+.top text:nth-child(1){
+  font-weight: 700;
+  color: #191919;
+}
+.top text:nth-child(2){
+  font-size: 28rpx;
+  color: #848484;
+}
+.xh{
+  display: flex;
+}
+.xh image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 70rpx;
+}
+.xh_r{
+  flex-grow: 1;
+  margin-left: 35rpx;
+  border-bottom: 1px solid #cfcfcf;
+}
+.gy{
+  font-size: 28rpx;
+}
+.xh_rb{
+  height: 80rpx;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.kg{
+  color: #9d9d9d;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-top: 30rpx;
+}
+.bji{
+  width: 165rpx;
+  font-size: 26rpx;
+  color: #cbcbcb;
+  margin-left: 120rpx;
+}
+.xh_rb button{
+  width: 150rpx;
+  font-size: 23rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+.xh_rb van-icon{
+  margin-top: 15rpx;
+  color: #7f7f7f;
+}

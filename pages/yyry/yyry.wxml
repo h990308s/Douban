@@ -1,0 +1,12 @@
+<!--pages/yyry/yyry.wxml-->
+<view class="wb">
+  <view class="upload_Item" wx:for="{{subjects}}" bindtap="bindXsk" data-newsid="{{item.id}}">
+    <!-- navigator：页面跳转链接 -->
+    <navigator  hover-class="none">
+      <image class="upload_Item_img" src="{{item.images.large}}"></image>
+      <text>{{item.title}}</text>
+      <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+      <view id="pf">{{item.rating.average}}</view>
+    </navigator>
+  </view>
+</view>

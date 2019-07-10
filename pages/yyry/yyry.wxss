@@ -1,0 +1,40 @@
+/* pages/yyry/yyry.wxss */
+.wb{
+  margin-top: 20rpx;
+}
+.upload_Item {
+  float: left;
+  width: 200rpx;
+  height: 370rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin: 0 24rpx;
+}
+.upload_Item_img {
+  float: left;
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item text {
+  display: inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 160rpx;
+  font-size: 26rpx; 
+  text-align: left;
+}
+.van-rate__item{
+  padding: 0 1px !important;
+}
+#pf{
+  display: inline-block;
+  color: #818181;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.van-rate{
+  display: inline-block;
+}

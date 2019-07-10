@@ -1,0 +1,101 @@
+<!--pages/pfzg/pfzg.wxml-->
+<view class="pfzg_t">
+  <image class="beijing" src="../../images/pfzg1.jpg"></image>
+  <image src="../../images/dybd1.jpg" id="yi"></image>
+  <view class="pfzg_tz">
+    <view class="pfzg_tz_1">
+      <view class="pfzg_tz_1_1">看过0部
+        <text>/共10部</text>
+      </view>
+      <button>生成海报</button>
+    </view>
+    <view class="pfzg_tz_2">
+      <text>评分最高华语电影</text>
+      <text>豆 瓣 2 0 1 8 年 度 电 影 榜 单</text>
+    </view>
+    <view class="pfzg_tz_3">
+      <image src="{{subjects[0].images.large}}"></image>
+      <view class="pfzg_tz_3_1">
+        <view class="pfzg_tz_3_1_1">{{subjects[0].title}}</view>
+        <view class="pfzg_tz_3_1_2">豆瓣评分™
+          <view class="pfzg_tz_3_1_2n">
+            <van-icon name="star-o" />看过</view>
+        </view>
+        <view class="pfzg_tz_3_1_3">
+          <text>{{subjects[0].rating.average}}</text>
+          <van-rate readonly value="{{ subjects[0].rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+        </view>
+      </view>
+    </view>
+    <view class="pfzg_tz_4">在我们刚刚经历过的时代巨变洪流之中，有无数这样的小人物在时代洪流中艰难生存着，同时在竭力不丢失他们的灵魂。终 ...-张小北</view>
+  </view>
+</view>
+
+<view class="pfzg_c">
+  <view class="xh" wx:for="{{subjects}}" wx:if="{{index>0&&index<10}}" bindtap="bindXsk" data-newsid="{{item.id}}">
+    <view class="xh_1">{{index+1}}</view>
+    <image src="{{item.images.large}}"></image>
+    <text>{{item.title}}</text>
+    <van-rate readonly value="{{ item.rating.stars/10 }}" size="10" color="#ffac2c" bind:change="onChange" />
+    <view class="xh_2">{{item.rating.average}}</view>
+    <view class="xh_3">
+      <van-icon name="star-o" />看过
+    </view>
+  </view>
+</view>
+
+<view class="ct"></view>
+
+<view class="pfzg_b">
+  <view class="center_bd">
+    <view class="center_bd1">更多2018年度分榜</view>
+    <view class="center_bd2">
+      全部
+      <van-icon name="arrow" />
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_02.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_03.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_04.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_07.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+  </view>
+  <view class="center_tu">
+    <view class="center_t1">
+      <image src="../../images/dybd_08.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+    <view class="center_t2">
+      <image src="../../images/dybd_09.png"></image>
+      <view class="kanwan">
+        <van-icon name="youzan-shield" colo="#f4d2ac" />看完了
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">豆瓣2018年度电影榜单</view>
